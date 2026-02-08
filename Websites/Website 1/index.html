@@ -1,66 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chidera's IT Solutions</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chidera's IT Solutions | Professional Tech Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <h1>Chidera's IT Solutions</h1>
-    <nav>
-      <ul>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Chidera's <span>IT Solutions</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
     </nav>
-  </header>
 
-  <section class="hero">
-    <h2>Empowering Your Digital Future</h2>
-    <p>Reliable IT solutions for businesses of all sizes.</p>
-    <a href="#contact" class="btn">Get Started</a>
-  </section>
+    <header id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>Empowering Your Digital Future</h1>
+            <p>Reliable, scalable, and secure IT solutions designed for businesses of all sizes.</p>
+            <div class="hero-btns">
+                <a href="#services" class="btn btn-primary">Our Services</a>
+                <a href="#contact" class="btn btn-outline">Get a Quote</a>
+            </div>
+        </div>
+    </header>
 
-  <section id="services">
-    <h2>Our Services</h2>
-    <div class="service-grid">
-      <div class="service">
-        <h3>Cloud Solutions</h3>
-        <p>Scalable and secure cloud infrastructure tailored to your needs.</p>
-      </div>
-      <div class="service">
-        <h3>Cybersecurity</h3>
-        <p>Protect your data with our advanced security protocols.</p>
-      </div>
-      <div class="service">
-        <h3>IT Consulting</h3>
-        <p>Expert advice to optimize your tech strategy and operations.</p>
-      </div>
-    </div>
-  </section>
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Expertise</h2>
+                <p>Comprehensive technology services to streamline your operations.</p>
+            </div>
+            <div class="service-grid">
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-cloud"></i></div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Scalable cloud infrastructure tailored to reduce costs and increase accessibility.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Cybersecurity</h3>
+                    <p>Advanced security protocols to protect your sensitive enterprise data.</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon-box"><i class="fas fa-laptop-code"></i></div>
+                    <h3>IT Consulting</h3>
+                    <p>Strategic advice to optimize your technology stack and digital workflow.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Us</h2>
-    <p>This company has a team of passionate IT professionals dedicated to helping businesses thrive in the digital age. With over 10 years of experience, we deliver innovative and reliable solutions.</p>
-  </section>
+    <section id="about" class="section bg-light">
+        <div class="container about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>Chidera's IT Solutions is a team of passionate professionals dedicated to helping businesses thrive in the digital age. With over a decade of experience, we bridge the gap between complex technology and business goals.</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> 10+ Years of Experience</li>
+                    <li><i class="fas fa-check-circle"></i> 24/7 Technical Support</li>
+                    <li><i class="fas fa-check-circle"></i> Certified Experts</li>
+                </ul>
+            </div>
+            <div class="about-image">
+                <div class="img-placeholder"><i class="fas fa-users"></i></div>
+            </div>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Ready to upgrade your IT infrastructure? Let's talk.</p>
+            </div>
+            <div class="contact-wrapper">
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="John Doe" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="john@example.com" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" placeholder="How can we help you?" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
 
-  <footer>
-    <p>&copy; 2025 Chidera IT Solutions. All rights reserved.</p>
-  </footer>
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">Chidera's IT Solutions</div>
+            <p>&copy; 2025 Chidera IT Solutions. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+    </footer>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
